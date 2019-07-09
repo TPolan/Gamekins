@@ -1,1 +1,6 @@
-<?php
+
+@extends('Wrapper')
+
+@section('content')
+
+@endsection
