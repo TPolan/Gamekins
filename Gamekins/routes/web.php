@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'MenuController@index');
 Route::get('/rfp', 'RollingController@index')->name('RFP');
-Route::get('/rfp', 'RollingController@roll');
+Route::get('/rfp/roll', 'RollingController@roll');

@@ -9,8 +9,10 @@
             @endforeach
         <button type="submit" value="roll">Roll for the Player</button>
     </form>
-    @if($request)
+    @if(count($roll) > 0)
         <h2>The first player is {{$players[($roll - 1)]->nickname}}</h2>
+    @else
+        <h2>You did not choose any Players</h2>
     @endif
 
 @endsection
